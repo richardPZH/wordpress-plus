@@ -8,7 +8,6 @@
 .wp_syntax {
 	overflow-x:auto;
 	overflow-y:hidden;
-	padding-bottom:expression(this.scrollWidth > this.offsetWidth ? 15:0);
 	width:99%;
 }
 .wp_syntax table {
@@ -19,7 +18,7 @@
 	width:100% !important
 }
 .wp_syntax caption {
-	padding:2px;
+	padding:0px;
 	width:100%;
 	background-color:#def;
 	text-align:left;
@@ -49,7 +48,6 @@
 	background:none;
 	line-height:normal;
 	white-space:normal;
-	padding-left:10px;
 }
 .wp_syntax pre {
 	background:transparent;
@@ -69,6 +67,13 @@
 	background-color:#E7E5DC;
 	color:gray;
 	width:20px;
-	padding:0 5px;
-	text-align:right;
+	padding:0 3px;
+	text-align:center;
+}
+.wp_syntax td.line_numbers{
+	width:20px;
+}
+.wp_syntax td.table td {
+  border-bottom: 1px solid #d0d0d0;
+  padding: 0px;
 }
